@@ -4,29 +4,35 @@ import apple_icon from "../public/assets/apple-icon.png";
 
 export default function Header() {
   return (
-    <header className="text-gray-600 body-font">
+    <header className="text-gray-400 bg-green-400 body-font">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <Link
           href="/"
-          className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
-        >
+          className="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white lg:items-center lg:justify-center mb-4 md:mb-0">
           <Image src={apple_icon} alt="icon" width="40" height="40" />
-          <span className="ml-3 text-xl">Nutrition</span>
+          <span className="ml-3 text-xl ">Nutrition</span>
         </Link>
-        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-          <Link href="/" className="mr-5 hover:text-gray-900">
-            List
-          </Link>
-          <Link href="/reference" className="mr-5 hover:text-gray-900">
-            Reference
-          </Link>
-          <Link href="/faq" className="mr-5 hover:text-gray-900">
-            FAQ
-          </Link>
-          <Link href="/about" className="mr-5 hover:text-gray-900">
-            About
-          </Link>
-        </nav>
+
+        <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start ">
+          <a
+            href="https://instagram.com/febianhaydar"
+            className="ml-3 text-gray-700  hover:text-gray-900"
+          >
+            <svg
+              fill="none"
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              className="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+        </span>
+
       </div>
     </header>
   );

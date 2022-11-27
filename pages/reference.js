@@ -1,59 +1,79 @@
-import Meta from "../components/Meta";
 import Header from "../components/Header";
+import Meta from "../components/Meta";
 import Footer from "../components/Footer";
 import Image from "next/image";
-import icon from "../public/assets/apple-icon.png";
+import Link from "next/link";
+import pic1 from "../public/assets/Pict-1.png";
+import pic2 from "../public/assets/Pict-2.png";
+import pic3 from "../public/assets/Pict-3.png";
+
 
 export default function Reference() {
   return (
     <div>
-      <Meta title="Low Carb Recipes: Reference" />
-
+      <Meta title="Nutrition: Reference" />
       <Header />
-
-      <section className="text-gray-600 body-font">
-        <div className="container px-5 py-8 mx-auto">
-          <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-            <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 flex-shrink-0">
-              <Image src={icon} alt="foodref" width="80" height="80" />
-            </div>
-            <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
-                Food Reference
-              </h2>
-              <p className="leading-relaxed text-base">
-                Food Reference on this Low Carb Recipes Application is using
-                Wikipedia.
-              </p>
+      <section class="text-gray-600 body-font">
+        <div class="container px-20 py-20 mx-auto">
+          <div class="text-center mb-20">
+            <h1 class="sm:text-3xl text-2xl font-semibold title-font text-gray-900 mb-4">
+              Reference Nutrition
+            </h1>
+            
+            <div class="flex mt-6 justify-center">
+              <div class="w-16 h-1 rounded-full bg-pink-500 inline-flex"></div>
             </div>
           </div>
-          <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
-            <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
-                Application Reference
-              </h2>
-              <p className="leading-relaxed text-base">
-                Application Reference on this Low Carb Recipes Application is
-                using Next.js and Vercel.
-              </p>
+          <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+            <div class="p-20 md:w-1/3 w-full flex flex-col text-justify items-center">
+              <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-black-100 text-pink-500 mb-5 flex-shrink-0">
+                <Image
+                  alt="icon"
+                  src={pic1}
+                  className="rounded-full bg-white"
+                />
+              </div>
+              <div class="flex-grow">
+                <Link href="/reference/github">
+                  <h2 class="text-gray-900 text-lg text-center title-font font-semibold mb-3">
+                    Github
+                  </h2>
+                </Link>
+              </div>
             </div>
-            <div className="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 flex-shrink-0">
-              <Image src={icon} alt="icon" width="80" height="80" />
+            <div class="p-20 md:w-1/3 w-full flex flex-col text-justify items-center">
+              <div class="bg-white bg-none w-20 h-20 inline-flex items-center justify-center rounded-full bg-black-100 text-pink-500 mb-5 flex-shrink-0">
+                <Image
+                  alt="icon"
+                  src={pic2}
+                  className="rounded-full bg-white"
+                />
+              </div>
+              <div class="flex-grow">
+                <Link href="/reference/vercel">
+                  <h2 class="text-gray-900 text-lg text-center title-font font-semibold mb-3">
+                    Next JS
+                  </h2>
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
-            <div className="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 flex-shrink-0">
-              <Image src={icon} alt="icon" width="80" height="80" />
+            <div class="p-20 md:w-1/3 w-full flex flex-col text-justify items-center">
+              <div class="bg-white w-20 h-20 inline-flex items-center justify-center rounded-full bg-black-100 text-pink-500 mb-5 flex-shrink-0">
+                <Image
+                  alt="icon"
+                  src={pic3}
+                  className="rounded-full bg-white"
+                />
+              </div>
+              <div class="flex-grow">
+                <Link href="/reference/vercel">
+                  <h2 class="text-gray-900 text-lg text-center title-font font-semibold mb-3">
+                    Vercel JS
+                  </h2>
+                </Link>
+              </div>
             </div>
-            <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-              <h2 className="text-gray-900 text-lg title-font font-medium mb-2">
-                API Reference
-              </h2>
-              <p className="leading-relaxed text-base">
-                API or Application Programming Interface on this Low Carb
-                Recipes is using RAPID API.
-              </p>
-            </div>
+            
           </div>
         </div>
       </section>

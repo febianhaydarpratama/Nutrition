@@ -23,8 +23,8 @@ export default function Detail() {
 
       <Header />
 
-      <section className="text-gray-600 body-font overflow-hidden">
-        <div className="container px-5 py-10 mx-auto">
+      <section className="text-gray-600 body-font ">
+        <div className="container px-10 py-40 mx-auto">
           <div className="lg:w-4/5 mx-auto flex flex-wrap">
             <Image
               alt="ecommerce"
@@ -42,6 +42,33 @@ export default function Detail() {
               </h1>
               <p className="leading-relaxed">
                 {data ? data.directions_step_1 : ""}
+              </p>
+              <p className="leading-relaxed">
+                {data ? data.directions_step_2 : ""}
+              </p>
+              <p className="leading-relaxed">
+                {data ? data.directions_step_3 : ""}
+              </p>
+              <p className="leading-relaxed">
+                {data ? data.directions_step_4 : ""}
+              </p>
+              <p className="leading-relaxed">
+                {data ? data.directions_step_5 : ""}
+              </p>
+              <p className="leading-relaxed">
+                {data ? data.directions_step_6 : ""}
+              </p>
+              <p className="leading-relaxed">
+                {data ? data.directions_step_7 : ""}
+              </p>
+              <p className="leading-relaxed">
+                {data ? data.directions_step_8 : ""}
+              </p>
+              <p className="leading-relaxed">
+                {data ? data.directions_step_9 : ""}
+              </p>
+              <p className="leading-relaxed">
+                {data ? data.directions_step_10 : ""}
               </p>
             </div>
           </div>
