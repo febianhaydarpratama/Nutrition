@@ -50,7 +50,7 @@ export default function Reference() {
                 />
               </div>
               <div class="flex-grow">
-                <Link href="/reference/vercel">
+                <Link href="/reference/nextjs">
                   <h2 class="text-gray-900 text-lg text-center title-font font-semibold mb-3">
                     Next JS
                   </h2>
