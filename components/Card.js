@@ -4,37 +4,36 @@ import Link from "next/link";
 export default function Card(props) {
   try {
     return (
-      <div className="lg:w-1/3 sm:w-1/2 p-4">
+      <div className="lg:w-1/4 md:w-1/2 p-4 w-full ">
         <Link
           href={{
             pathname: "/detail",
             query: { data: JSON.stringify(props) },
           }}
+          className="block relative h-48 rounded "
+          
         >
-          <div className="flex relative">
-            <Image
-              alt="thumbnail"
-              className="absolute inset-0 w-full h-full object-cover object-center"
-              src={props.data.image}
-              width="600"
-              height="360"
-            />
-            <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-              <h2 className="tracking-widest text-sm title-font font-medium text-green-500 mb-1">
-                {props.data.category.category}
-              </h2>
-              <h1 className="title-font text-lg font-medium text-gray-900 mb-3  ">
-                {props.data.recipe}
-              </h1>
-              <p className="leading-relaxed line-clamp-3">
-                {props.data.directions_step_1}
-              </p>
-            </div>
-          </div>
+
+          <Image
+            alt="thumbnail"
+            className="absolute inset-0 w-full h-full object-cover object-center"
+            src={props.data.image}
+            width="600"
+            height="360"
+          />
         </Link>
+        <div className="mt-4">
+          <h3 className="text-gray-800 text-xs tracking-widest title-font mb-1">
+            {props.data.category.category}
+          </h3>
+          <h2 className="title-font text-lg font-medium text-gray-900 mb-3">
+            {props.data.recipe}
+          </h2>
+        </div>
       </div>
+
     );
   } catch (e) {
-    console.error(e);
+    console.log(e);
   }
 }

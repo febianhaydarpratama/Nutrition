@@ -10,13 +10,13 @@ export default function Footer() {
         <div class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center ">
           <Link href="/" className="flex title-font font-sm items-center text-gray-700  hover:text-gray-900 mb-4 mr-3 md:mb-0">
 
-            <h1 className="ml-2">list </h1>
+            <h1 className="ml-2">List </h1>
 
 
           </Link>
           <Link href="/reference" className="flex title-font font-sm items-center text-gray-700  hover:text-gray-900 mb-4 mr-3 md:mb-0">
             
-            <h1 className="ml-2">reference </h1>
+            <h1 className="ml-2">Reference </h1>
 
 
           </Link>
@@ -28,7 +28,7 @@ export default function Footer() {
           </Link>
           <Link href="/about" className="flex title-font font-sm items-center text-gray-700  hover:text-gray-900 mb-4 mr-3 md:mb-0">
             
-            <h1 className="ml-2">about </h1>
+            <h1 className="ml-2">About </h1>
 
           </Link>
         </div>

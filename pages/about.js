@@ -41,7 +41,7 @@ export default function About() {
                   Nutrition is an application that contains eating healthy and balanced food
                   with one way of dieting using the katogenic method which contains a data 
                   collection of more than 450 Ketogenic diet recipes in morethan 10 categories 
-                  from Breakfast to Dinner.This application was developed using
+                  from Breakfast to Dinner. This application was developed using
                   next.js with the best practices that I have learned. Apart
                   from that, this application is also deployed using Vercel.
                 </p>
