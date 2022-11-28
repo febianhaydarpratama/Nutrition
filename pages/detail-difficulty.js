@@ -5,7 +5,7 @@ import Meta from "../components/Meta";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-export default function Label() {
+export default function Detaildifficulty() {
   const router = useRouter();
   const [title, setTitle] = useState("");
   const [data, setData] = useState(null);
@@ -68,8 +68,9 @@ export default function Label() {
                 {data ? data.directions_step_9 : ""}
               </p>
               <p className="leading-relaxed">
-                {data ? data.directions_step_10 : ""}
+                {data ? data.difficulty : ""}
               </p>
+            
             </div>
           </div>
         </div>

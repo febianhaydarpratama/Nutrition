@@ -70,6 +70,9 @@ export default function Detail() {
               <p className="leading-relaxed">
                 {data ? data.directions_step_10 : ""}
               </p>
+              <p className="leading-relaxed">
+                {data ? data.difficulty : ""}
+              </p>
             </div>
           </div>
         </div>

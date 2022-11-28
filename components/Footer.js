@@ -11,7 +11,11 @@ export default function Footer() {
           <Link href="/" className="flex title-font font-sm items-center text-gray-700  hover:text-gray-900 mb-4 mr-3 md:mb-0">
 
             <h1 className="ml-2">List </h1>
-
+          </Link>
+            
+          <Link href="/difficulty" className="flex title-font font-sm items-center text-gray-700  hover:text-gray-900 mb-4 mr-3 md:mb-0">
+            
+            <h1 className="ml-2">Difficulty </h1>
 
           </Link>
           <Link href="/reference" className="flex title-font font-sm items-center text-gray-700  hover:text-gray-900 mb-4 mr-3 md:mb-0">
@@ -29,12 +33,6 @@ export default function Footer() {
           <Link href="/about" className="flex title-font font-sm items-center text-gray-700  hover:text-gray-900 mb-4 mr-3 md:mb-0">
             
             <h1 className="ml-2">About </h1>
-
-          </Link>
-
-          <Link href="/label" className="flex title-font font-sm items-center text-gray-700  hover:text-gray-900 mb-4 mr-3 md:mb-0">
-            
-            <h1 className="ml-2">Label </h1>
 
           </Link>
 
