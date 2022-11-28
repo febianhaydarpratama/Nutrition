@@ -31,6 +31,13 @@ export default function Footer() {
             <h1 className="ml-2">About </h1>
 
           </Link>
+
+          <Link href="/label" className="flex title-font font-sm items-center text-gray-700  hover:text-gray-900 mb-4 mr-3 md:mb-0">
+            
+            <h1 className="ml-2">Label </h1>
+
+          </Link>
+
         </div>
       </div>
     </footer>
